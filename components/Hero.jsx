@@ -40,7 +40,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Unleash your potential at Tech Aura 2024. Join us on Feb 24-25 to dive
+          Unleash your potential at Tech Aura 2025. Join us on Feb 24-25 to dive
           into groundbreaking technology, celebrate creativity, and build a
           brighter future. Unlock your potential and be part of the change!
         </motion.p>
