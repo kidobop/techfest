@@ -8,9 +8,8 @@ import {
   useTransform,
 } from "framer-motion";
 import { SiSpacex } from "react-icons/si";
-import { FiArrowRight, FiMapPin } from "react-icons/fi";
+import { FiArrowRight } from "react-icons/fi";
 import { useRef } from "react";
-import Schedule from "./ScheduleTable";
 
 export const SmoothScrollHero = () => {
   return (
