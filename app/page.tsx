@@ -9,7 +9,10 @@ export default function Home() {
     <>
       <SmoothScrollHero />
       <HeroSection />
-      <Card1 />
+      <Card1
+        imageSrc="/ta.png"
+        imageAlt="Description for Image 1"
+      />
       <EventCard />
       <Schedule />
     </>
