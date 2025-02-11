@@ -12,6 +12,7 @@ export default function Home() {
       <Card1
         imageSrc="/ta.png"
         imageAlt="Description for Image 1"
+        title="Computer Engineering"
       />
       <EventCard />
       <Schedule />

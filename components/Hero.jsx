@@ -9,9 +9,9 @@ export default function Hero() {
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center">
         <motion.div
           className="mb-4 w-[50vw] h-[50vw] max-w-[300px] max-h-[300px] relative image-glow"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          initial={{ opacity: 0, y: 48 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeInOut", duration: 0.75 }}
         >
           <Image
             src="/ta.png"
@@ -23,17 +23,17 @@ export default function Hero() {
         </motion.div>
         <motion.h1
           className="text-6xl font-bold tracking-tighter sm:text-7xl lg:text-8xl"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          initial={{ opacity: 0, y: 48 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeInOut", duration: 0.75 }}
         >
           Tech <span className="glow">AURA</span>
         </motion.h1>
         <motion.p
           className="max-w-[600px] text-lg text-gray-400 sm:text-xl mt-4"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          initial={{ opacity: 0, y: 48 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeInOut", duration: 0.75, delay: 0.2 }}
         >
           Unleash your potential at Tech Aura 2025. Join us on Feb 24-25 to dive
           into groundbreaking technology, celebrate creativity, and build a
