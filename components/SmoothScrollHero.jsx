@@ -7,7 +7,7 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import { SiSpacex } from "react-icons/si";
+//import { SiSpacex } from "react-icons/si";
 import { FiArrowRight } from "react-icons/fi";
 import { useRef } from "react";
 
