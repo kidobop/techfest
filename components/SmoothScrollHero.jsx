@@ -42,7 +42,7 @@ const Nav = () => {
         }}
         className="flex items-center gap-1 text-xs text-zinc-400"
       >
-        LAUNCH SCHEDULE <FiArrowRight />
+        EXPLORE EVENTS <FiArrowRight />
       </button>
     </nav>
   );

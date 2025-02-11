@@ -3,30 +3,29 @@ import { motion } from "framer-motion";
 import Card1 from "./Card1";
 
 const Dept = () => {
-  // Card data stored in an array of objects
   const cardsData = [
     {
-      imageSrc: "/ta.png",
+      imageSrc: "/900.jpg",
       imageAlt: "Description for Image 1",
       title: "Computer Engineering",
     },
     {
-      imageSrc: "/ta.png",
+      imageSrc: "/900.jpg",
       imageAlt: "Description for Image 2",
       title: "Electrical Engineering",
     },
     {
-      imageSrc: "/ta.png",
+      imageSrc: "/900.jpg",
       imageAlt: "Description for Image 3",
       title: "Mechanical Engineering",
     },
     {
-      imageSrc: "/ta.png",
+      imageSrc: "/900.jpg",
       imageAlt: "Description for Image 4",
       title: "Civil Engineering",
     },
     {
-      imageSrc: "/ta.png",
+      imageSrc: "/900.jpg",
       imageAlt: "Description for Image 5",
       title: "Aerospace Engineering",
     },
@@ -44,18 +43,32 @@ const Dept = () => {
         transition={{ ease: "easeInOut", duration: 0.75 }}
         className="mb-12 text-4xl font-black uppercase text-zinc-50 text-center"
       >
-        Our Departments
+        Department Events
       </motion.h1>
       {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {cardsData.map((card, index) => (
-          <Card1
-            key={index}
-            imageSrc={card.imageSrc}
-            imageAlt={card.imageAlt}
-            title={card.title}
-          />
-        ))}
+      <div className="flex justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {cardsData.slice(0, 3).map((card, index) => (
+            <Card1
+              key={index}
+              imageSrc={card.imageSrc}
+              imageAlt={card.imageAlt}
+              title={card.title}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="flex justify-center mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {cardsData.slice(3).map((card, index) => (
+            <Card1
+              key={index + 3}
+              imageSrc={card.imageSrc}
+              imageAlt={card.imageAlt}
+              title={card.title}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

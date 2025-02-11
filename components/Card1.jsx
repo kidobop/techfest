@@ -31,7 +31,7 @@ export default function Card1({ imageSrc, imageAlt, title }) {
                      text-white font-medium text-sm hover:bg-white/20 transition-colors"
         >
           <FaArrowRight className="w-4 h-4 fill-white" />
-          Notify me
+          Explore
         </button>
       </div>
     </div>
