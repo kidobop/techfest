@@ -38,7 +38,6 @@ const EventCard = () => {
       transition={{ ease: 'easeInOut', duration: 0.75 }}
       className="w-full max-w-sm overflow-hidden rounded-lg bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 relative group"
       whileHover={{ scale: 1.02, boxShadow: '0 0 20px rgba(0, 0, 0, 0.3)' }}
-      transition={{ type: 'spring', stiffness: 400, damping: 10 }}
       style={{
         perspective: '1000px',
         transform: `rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
