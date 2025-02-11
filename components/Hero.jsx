@@ -1,55 +1,45 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 import { motion } from "framer-motion";
-import { FiCpu } from "react-icons/fi";
 
-const HeroSection = () => {
+export default function Hero() {
   return (
-    <section className="mx-auto max-w-5xl px-4 py-16 md:py-24 lg:py-48 text-white">
-      <div className="flex flex-col items-start gap-4 md:gap-6 lg:gap-8">
-        <motion.div
-          initial={{ y: 48, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ ease: "easeInOut", duration: 0.75 }}
-          className="flex items-center gap-2 md:gap-3"
-        >
-          <FiCpu className="h-5 w-5 md:h-6 md:w-6 text-zinc-500" />
-          <p className="mb-1.5 text-xl font-bold text-zinc-50">
-            Tech Conference 2024
-          </p>
-        </motion.div>
-
+    <div className="relative h-screen w-full overflow-hidden">
+      <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center">
         <motion.h1
-          initial={{ y: 48, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ ease: "easeInOut", duration: 0.75, delay: 0.2 }}
-          className="max-w-2xl text-3xl md:text-4xl lg:text-5xl font-black text-zinc-50"
+          className="mb-6 text-6xl font-bold tracking-tighter sm:text-7xl lg:text-8xl"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
         >
-          A peek into the latest in tech
+          Tech <span className="glow">AURA</span>
         </motion.h1>
-
         <motion.p
-          initial={{ y: 48, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ ease: "easeInOut", duration: 0.75, delay: 0.4 }}
-          className="max-w-xl text-base md:text-lg text-zinc-400"
+          className="max-w-[600px] text-lg text-gray-400 sm:text-xl"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Empower your potential at TechAura 2022, where tech meets tradition! Join MTI Thrissur from 
-          February 9-11 to discover new opportunities, showcase your talents, and contribute to your growth.
+          Visual Artist & Creative Director
         </motion.p>
-
-        <motion.button
-          initial={{ y: 48, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ ease: "easeInOut", duration: 0.75, delay: 0.6 }}
-          className="mt-2 md:mt-4 w-full md:w-auto rounded-lg bg-zinc-50 px-6 md:px-8 py-3 md:py-4 text-sm uppercase font-bold text-zinc-900 transition-colors hover:bg-zinc-200"
-        >
-          Don't miss the chance to unlock your skills!
-        </motion.button>
       </div>
-    </section>
+      <style jsx>{`
+        @keyframes subtleGlow {
+          0% {
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+          }
+          50% {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.7);
+          }
+          100% {
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+          }
+        }
+        .glow {
+          animation: subtleGlow 2s ease-in-out infinite;
+        }
+      `}</style>
+    </div>
   );
-};
-
-export default HeroSection;
+}
