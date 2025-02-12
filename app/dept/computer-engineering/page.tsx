@@ -39,7 +39,7 @@ const ComputerEngineering = () => {
         description="Welcome to the Computer Engineering department. Explore our events here."
       />
       {/* Events Subheading */}
-      <section className="py-6 sm:py-8">
+      <section className="py-6 sm:py-8 mb-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h2 
             className="text-2xl sm:text-3xl font-bold text-center text-white mb-6 sm:mb-8"
