@@ -52,11 +52,15 @@ const Dept = () => {
         Department Events
       </motion.h1>
       {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+      <div className="w-full">
         {/* First row of cards */}
-        <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
           {cardsData.slice(0, 3).map((card, index) => (
-            <Link key={index} href={card.href}>
+            <Link
+              key={index}
+              href={card.href}
+              className="w-full max-w-sm mx-auto" // Center cards in mobile
+            >
               <Card1
                 imageSrc={card.imageSrc}
                 imageAlt={card.imageAlt}
@@ -66,9 +70,13 @@ const Dept = () => {
           ))}
         </div>
         {/* Last two cards centered */}
-        <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-8 lg:w-2/3 mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:w-2/3 mx-auto">
           {cardsData.slice(3).map((card, index) => (
-            <Link key={index + 3} href={card.href}>
+            <Link
+              key={index + 3}
+              href={card.href}
+              className="w-full max-w-sm mx-auto" // Center cards in mobile
+            >
               <Card1
                 imageSrc={card.imageSrc}
                 imageAlt={card.imageAlt}
