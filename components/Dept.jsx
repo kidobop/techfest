@@ -1,6 +1,7 @@
-'use client';
+"use client";
 import { motion } from "framer-motion";
 import Card1 from "./Card1";
+import Link from "next/link";
 
 const Dept = () => {
   const cardsData = [
@@ -8,26 +9,31 @@ const Dept = () => {
       imageSrc: "/900.jpg",
       imageAlt: "Description for Image 1",
       title: "Computer Engineering",
+      href: "/dept/computer-engineering",
     },
     {
       imageSrc: "/900.jpg",
       imageAlt: "Description for Image 2",
       title: "Electrical Engineering",
+      href: "/dept/electrical-engineering",
     },
     {
       imageSrc: "/900.jpg",
       imageAlt: "Description for Image 3",
       title: "Mechanical Engineering",
+      href: "/dept/mechanical-engineering",
     },
     {
       imageSrc: "/900.jpg",
       imageAlt: "Description for Image 4",
       title: "Civil Engineering",
+      href: "/dept/civil-engineering",
     },
     {
       imageSrc: "/900.jpg",
       imageAlt: "Description for Image 5",
       title: "Aerospace Engineering",
+      href: "/dept/aerospace-engineering",
     },
   ];
 
@@ -46,29 +52,18 @@ const Dept = () => {
         Department Events
       </motion.h1>
       {/* Cards */}
-      <div className="flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {cardsData.slice(0, 3).map((card, index) => (
-            <Card1
-              key={index}
-              imageSrc={card.imageSrc}
-              imageAlt={card.imageAlt}
-              title={card.title}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="flex justify-center mt-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          {cardsData.slice(3).map((card, index) => (
-            <Card1
-              key={index + 3}
-              imageSrc={card.imageSrc}
-              imageAlt={card.imageAlt}
-              title={card.title}
-            />
-          ))}
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {cardsData.map((card, index) => (
+          <Link key={index} href={card.href} legacyBehavior>
+            <a>
+              <Card1
+                imageSrc={card.imageSrc}
+                imageAlt={card.imageAlt}
+                title={card.title}
+              />
+            </a>
+          </Link>
+        ))}
       </div>
     </section>
   );
