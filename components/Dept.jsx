@@ -40,7 +40,7 @@ const Dept = () => {
   return (
     <section
       id="launch-schedule"
-      className="mx-auto max-w-5xl px-4 py-24 text-white"
+      className="mx-auto max-w-5xl px-4 py-24 text-white min-h-screen flex flex-col items-center justify-center"
     >
       {/* Main Title */}
       <motion.h1
@@ -52,7 +52,7 @@ const Dept = () => {
         Department Events
       </motion.h1>
       {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
         {cardsData.map((card, index) => (
           <Link key={index} href={card.href} legacyBehavior>
             <a>
