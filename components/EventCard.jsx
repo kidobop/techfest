@@ -1,8 +1,9 @@
+// EventCard.jsx
 "use client";
 import React, { useState, useRef } from "react";
 import Image from "next/image";
 
-const EventCard = ({ eventname, description, date, imageUrl }) => {
+const EventCard = ({ eventname, description, date, imageUrl, registerUrl }) => {
   const cardRef = useRef(null);
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
@@ -69,7 +70,10 @@ const EventCard = ({ eventname, description, date, imageUrl }) => {
           <h3 className="text-xl font-semibold text-white">{eventname}</h3>
           <p className="text-sm text-zinc-400 line-clamp-3">{description}</p>
           <div className="pt-2">
-            <button
+            <a
+              href={registerUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`w-full px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 ease-in-out hover:bg-purple-600 hover:shadow-lg hover:shadow-purple-500/20 ${
                 isHovered
                   ? "bg-purple-500 text-white shadow-lg shadow-purple-500/25"
@@ -77,7 +81,7 @@ const EventCard = ({ eventname, description, date, imageUrl }) => {
               }`}
             >
               Register
-            </button>
+            </a>
           </div>
         </div>
       </div>
