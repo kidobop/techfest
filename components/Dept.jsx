@@ -6,31 +6,31 @@ import Link from "next/link";
 const Dept = () => {
   const cardsData = [
     {
-      imageSrc: "/900.jpg",
+      imageSrc: "/cesa.jpg",
       imageAlt: "Description for Image 1",
       title: "Computer Engineering",
       href: "/dept/computer-engineering",
     },
     {
-      imageSrc: "/900.jpg",
+      imageSrc: "/eee.jpg",
       imageAlt: "Description for Image 2",
       title: "Electrical Engineering",
       href: "/dept/electrical-engineering",
     },
     {
-      imageSrc: "/900.jpg",
+      imageSrc: "/mexm.jpg",
       imageAlt: "Description for Image 3",
       title: "Mechanical Engineering",
       href: "/dept/mechanical-engineering",
     },
     {
-      imageSrc: "/900.jpg",
+      imageSrc: "/caes.jpg",
       imageAlt: "Description for Image 4",
       title: "Civil Engineering",
       href: "/dept/civil-engineering",
     },
     {
-      imageSrc: "/900.jpg",
+      imageSrc: "/elsa.jpg",
       imageAlt: "Description for Image 5",
       title: "Electronics Engineering",
       href: "/dept/electronics-engineering",
