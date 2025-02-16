@@ -302,6 +302,7 @@ const EventPage = () => {
         imageUrl={event.imageUrl}
         alt="Event Featured Image"
       />
+      <p className="text-center text-white mt-2">Click to enlarge the image</p>
 
       {/* Event Details Section */}
       <section className="py-4 sm:py-6 lg:py-8 mb-8 sm:mb-12">
