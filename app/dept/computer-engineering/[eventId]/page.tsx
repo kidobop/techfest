@@ -2,7 +2,8 @@
 
 import React from "react";
 import { useParams } from "next/navigation";
-import Image from 'next/image';
+//import Image from 'next/image';
+import FullscreenImageSection from "@/components/FullscreenImageSection";
 import Footer from "@/components/Footer";
 import DeptHero from "@/components/DeptHero";
 
@@ -37,7 +38,7 @@ const eventsData = [
     eventname: "Website Design",
     description: "Showcase your web design skills in this competitive event.",
     date: "Mar 10, 2025",
-    imageUrl: "/900.jpg",
+    imageUrl: "https://ik.imagekit.io/dvz2h68tj/Posters/Picsart_25-02-16_19-34-18-055.jpg?updatedAt=1739728982165",
     registerUrl: "https://example.com/website-design",
     fullDescription: `Participate in a website design competition where you can showcase your creativity and technical skills. This event includes:
     - Design challenges
@@ -291,24 +292,16 @@ const EventPage = () => {
       {/* Hero Section */}
       <DeptHero
         title={event.eventname}
-        imageSrc={event.imageUrl}
+        imageSrc="/cesa.jpg"
         imageAlt={`${event.eventname} Cover Image`}
         description="Computer Engineering Department Event"
       />
 
       {/* Featured Image Section */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-8 sm:my-12">
-        <div className="relative aspect-[3/4] sm:aspect-[16/9] w-full max-w-3xl mx-auto rounded-lg sm:rounded-2xl overflow-hidden shadow-xl">
-          <Image
-            src="/900.jpg"
-            alt="Event Featured Image"
-            fill
-            className="object-cover"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 75vw, 50vw"
-            priority
-          />
-        </div>
-      </div>
+      <FullscreenImageSection
+        imageUrl={event.imageUrl}
+        alt="Event Featured Image"
+      />
 
       {/* Event Details Section */}
       <section className="py-4 sm:py-6 lg:py-8 mb-8 sm:mb-12">
@@ -318,19 +311,29 @@ const EventPage = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {/* Date Card */}
               <div className="bg-gray-800 rounded-lg p-4 sm:p-6 shadow-lg">
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">Date & Time</h3>
-                <p className="text-gray-300 text-sm sm:text-base">{event.date}</p>
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">
+                  Date & Time
+                </h3>
+                <p className="text-gray-300 text-sm sm:text-base">
+                  {event.date}
+                </p>
               </div>
 
               {/* Venue Card */}
               <div className="bg-gray-800 rounded-lg p-4 sm:p-6 shadow-lg">
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">Venue</h3>
-                <p className="text-gray-300 text-sm sm:text-base">{event.venue}</p>
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">
+                  Venue
+                </h3>
+                <p className="text-gray-300 text-sm sm:text-base">
+                  {event.venue}
+                </p>
               </div>
 
               {/* Registration Card */}
               <div className="bg-gray-800 rounded-lg p-4 sm:p-6 shadow-lg sm:col-span-2 lg:col-span-1">
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">Registration</h3>
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">
+                  Registration
+                </h3>
                 <a
                   href={event.registerUrl}
                   target="_blank"
@@ -344,21 +347,31 @@ const EventPage = () => {
 
             {/* Event Description */}
             <div className="bg-gray-800 rounded-lg p-4 sm:p-6 shadow-lg">
-              <h2 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">About the Event</h2>
-              <p className="text-gray-300 text-sm sm:text-base whitespace-pre-line">{event.fullDescription}</p>
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
+                About the Event
+              </h2>
+              <p className="text-gray-300 text-sm sm:text-base whitespace-pre-line">
+                {event.fullDescription}
+              </p>
             </div>
 
             {/* Schedule */}
             <div className="bg-gray-800 rounded-lg p-4 sm:p-6 shadow-lg">
-              <h2 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Event Schedule</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
+                Event Schedule
+              </h2>
               <div className="space-y-3 sm:space-y-4">
                 {event.schedule.map((item, index) => (
                   <div
                     key={index}
                     className="flex flex-col sm:flex-row justify-between items-start sm:items-center bg-gray-700 p-3 sm:p-4 rounded-lg"
                   >
-                    <span className="text-gray-300 font-medium text-sm sm:text-base mb-1 sm:mb-0">{item.time}</span>
-                    <span className="text-gray-300 text-sm sm:text-base">{item.activity}</span>
+                    <span className="text-gray-300 font-medium text-sm sm:text-base mb-1 sm:mb-0">
+                      {item.time}
+                    </span>
+                    <span className="text-gray-300 text-sm sm:text-base">
+                      {item.activity}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -366,15 +379,21 @@ const EventPage = () => {
 
             {/* Coordinators */}
             <div className="bg-gray-800 rounded-lg p-4 sm:p-6 shadow-lg">
-              <h2 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Event Coordinators</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
+                Event Coordinators
+              </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 {event.coordinators.map((coordinator, index) => (
                   <div
                     key={index}
                     className="bg-gray-700 p-3 sm:p-4 rounded-lg"
                   >
-                    <p className="text-white font-semibold text-sm sm:text-base mb-1">{coordinator.name}</p>
-                    <p className="text-gray-300 text-sm sm:text-base">{coordinator.contact}</p>
+                    <p className="text-white font-semibold text-sm sm:text-base mb-1">
+                      {coordinator.name}
+                    </p>
+                    <p className="text-gray-300 text-sm sm:text-base">
+                      {coordinator.contact}
+                    </p>
                   </div>
                 ))}
               </div>

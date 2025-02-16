@@ -20,7 +20,7 @@ const ComputerEngineering = () => {
     eventname: "Website Design",
     description: "Showcase your web design skills in this competitive event.",
     date: "Mar 10, 2025",
-    imageUrl: "/900.jpg",
+    imageUrl: "https://ik.imagekit.io/dvz2h68tj/Posters/Picsart_25-02-16_19-34-18-055.jpg?updatedAt=1739728982165",
     registerUrl: "https://example.com/website-design",
   },
   {
