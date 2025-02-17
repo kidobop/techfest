@@ -20,7 +20,7 @@ const ComputerEngineering = () => {
       id: "website-design",
       eventname: "Website Design",
       description: "Showcase your web design skills in this competitive event.",
-      date: "Mar 10, 2025",
+      date: "Feb 25, 2025",
       imageUrl:
         "https://ik.imagekit.io/dvz2h68tj/Posters/Picsart_25-02-16_19-34-18-055.jpg?updatedAt=1739728982165",
       registerUrl: "https://example.com/website-design",
@@ -29,26 +29,28 @@ const ComputerEngineering = () => {
       id: "it-quiz",
       eventname: "IT Quiz",
       description: "Test your knowledge in an exciting IT quiz competition.",
-      date: "Apr 05, 2025",
+      date: "Feb 24, 2025",
       imageUrl: "/900.jpg",
       registerUrl: "https://example.com/it-quiz",
     },
     {
-      id: "escape-room",
-      eventname: "Escape Room",
+      id: "hack-and-seek",
+      eventname: "Hack and Seek",
       description:
         "Solve puzzles and escape the room in this thrilling challenge.",
-      date: "May 20, 2025",
-      imageUrl: "/900.jpg",
+      date: "Feb 24, 2025",
+      imageUrl:
+        "https://ik.imagekit.io/dvz2h68tj/Posters/IMG-20250216-WA0200.jpg?updatedAt=1739728982178",
       registerUrl: "https://example.com/escape-room",
     },
     {
-      id: "puzzle-solving",
-      eventname: "Puzzle Solving",
+      id: "crack-the-code",
+      eventname: "Crack the Code",
       description:
         "Put your problem-solving skills to the test with various puzzles.",
-      date: "Jun 15, 2025",
-      imageUrl: "/900.jpg",
+      date: "Feb 25, 2025",
+      imageUrl:
+        "https://ik.imagekit.io/dvz2h68tj/Posters/IMG-20250216-WA0201(1).jpg?updatedAt=1739728982003",
       registerUrl: "https://example.com/puzzle-solving",
     },
     {
@@ -56,7 +58,7 @@ const ComputerEngineering = () => {
       eventname: "E-Games",
       description:
         "Compete in various e-games and show off your gaming skills.",
-      date: "Jul 10, 2025",
+      date: "Feb 24, 2025",
       imageUrl: "/900.jpg",
       registerUrl: "https://example.com/e-games",
     },
@@ -64,8 +66,9 @@ const ComputerEngineering = () => {
       id: "fun-games",
       eventname: "Fun Games",
       description: "Enjoy a variety of fun games and activities.",
-      date: "Aug 05, 2025",
-      imageUrl: "/900.jpg",
+      date: "Feb 25, 2025",
+      imageUrl:
+        "https://ik.imagekit.io/dvz2h68tj/Posters/Picsart_25-02-15_18-17-30-025.jpg?updatedAt=1739728982651",
       registerUrl: "https://example.com/fun-games",
     },
     {
@@ -73,7 +76,7 @@ const ComputerEngineering = () => {
       eventname: "Spot Photography",
       description:
         "Capture the moment in this on-the-spot photography competition.",
-      date: "Sep 20, 2025",
+      date: "Feb 25, 2025",
       imageUrl: "/900.jpg",
       registerUrl: "https://example.com/spot-photography",
     },
@@ -82,8 +85,9 @@ const ComputerEngineering = () => {
       eventname: "Fast Typing",
       description:
         "Test your typing speed in this fast-paced typing competition.",
-      date: "Oct 15, 2025",
-      imageUrl: "/900.jpg",
+      date: "Feb 24, 2025",
+      imageUrl:
+        "https://ik.imagekit.io/dvz2h68tj/Posters/IMG-20250216-WA0174.jpg?updatedAt=1739728981999",
       registerUrl: "https://example.com/fast-typing",
     },
     {
@@ -91,8 +95,9 @@ const ComputerEngineering = () => {
       eventname: "Rubik's Cube",
       description:
         "Solve the Rubik's Cube as fast as you can in this speed challenge.",
-      date: "Nov 10, 2025",
-      imageUrl: "/900.jpg",
+      date: "Feb 25, 2025",
+      imageUrl:
+        "https://ik.imagekit.io/dvz2h68tj/Posters/IMG-20250216-WA0191.jpg?updatedAt=1739728982008",
       registerUrl: "https://example.com/rubiks-cube",
     },
     {
@@ -100,8 +105,9 @@ const ComputerEngineering = () => {
       eventname: "Mehndi",
       description:
         "Showcase your artistic skills in this traditional Mehndi competition.",
-      date: "Dec 05, 2025",
-      imageUrl: "/900.jpg",
+      date: "Feb 25, 2025",
+      imageUrl:
+        "https://ik.imagekit.io/dvz2h68tj/Posters/Picsart_25-02-15_17-14-39-353.png?updatedAt=1739728982776",
       registerUrl: "https://example.com/mehndi",
     },
   ];
