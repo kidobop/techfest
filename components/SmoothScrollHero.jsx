@@ -2,7 +2,7 @@
 
 import { ReactLenis } from 'lenis/dist/lenis-react';
 import { motion, useMotionTemplate, useScroll, useTransform } from 'framer-motion';
-import { FiArrowRight } from 'react-icons/fi';
+import { FiArrowRight, FiChevronDown } from "react-icons/fi";
 import { useRef } from 'react';
 
 export const SmoothScrollHero = () => {
@@ -16,6 +16,7 @@ export const SmoothScrollHero = () => {
       >
         <Nav />
         <Hero />
+        <ScrollIndicator />
       </ReactLenis>
     </div>
   );
@@ -158,6 +159,35 @@ const ParallaxImg = ({ className, alt, src, start, end }) => {
       ref={ref} 
       style={{ transform, opacity }} 
     />
+  );
+};
+
+const ScrollIndicator = () => {
+  const { scrollY } = useScroll();
+
+  // Fade out the arrow as user scrolls down
+  const opacity = useTransform(scrollY, [0, 100], [1, 0]);
+
+  // Animate the arrow bouncing up and down
+  const bounceAnimation = {
+    y: [0, 10, 0],
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  };
+
+  return (
+    <motion.div
+      className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 flex flex-col items-center gap-2"
+      style={{ opacity }}
+    >
+      <p className="text-zinc-400 text-sm">Scroll Down</p>
+      <motion.div animate={bounceAnimation}>
+        <FiChevronDown className="w-6 h-6 text-white" />
+      </motion.div>
+    </motion.div>
   );
 };
 
