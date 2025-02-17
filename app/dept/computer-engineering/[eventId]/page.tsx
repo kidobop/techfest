@@ -14,7 +14,8 @@ const eventsData = [
     eventname: "Hackathon and Idea Pitching",
     description: "Participate in a hackathon and pitch your innovative ideas.",
     date: "Feb 25, 2025",
-    imageUrl:"https://ik.imagekit.io/dvz2h68tj/Posters/36776798_8467755.png?updatedAt=1739758889014",
+    imageUrl:
+      "https://ik.imagekit.io/dvz2h68tj/Posters/36776798_8467755.png?updatedAt=1739758889014",
     registerUrl: "https://example.com/hackathon",
     fullDescription: `Join us for an exciting hackathon where you can showcase your
     innovative ideas and technical skills. This event includes:
@@ -59,11 +60,12 @@ const eventsData = [
     ],
   },
   {
-    id: "it-quiz",
-    eventname: "IT Quiz",
+    id: "cyber-hunt",
+    eventname: "Cyber Hunt",
     description: "Test your knowledge in an exciting IT quiz competition.",
     date: "Apr 05, 2025",
-    imageUrl: "/900.jpg",
+    imageUrl:
+      "https://ik.imagekit.io/dvz2h68tj/Posters/WhatsApp%20Image%202025-02-15%20at%2017.55.06_c03cb16a.jpg?updatedAt=1739814833633",
     registerUrl: "https://example.com/it-quiz",
     fullDescription: `Join us for an exciting IT quiz competition where you can test your knowledge and win exciting prizes. This event includes:
     - Multiple rounds of quizzes
