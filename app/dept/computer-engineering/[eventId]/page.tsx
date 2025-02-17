@@ -14,7 +14,7 @@ const eventsData = [
     eventname: "Hackathon and Idea Pitching",
     description: "Participate in a hackathon and pitch your innovative ideas.",
     date: "Feb 25, 2025",
-    imageUrl: "/900.jpg",
+    imageUrl:"https://ik.imagekit.io/dvz2h68tj/Posters/36776798_8467755.png?updatedAt=1739758889014",
     registerUrl: "https://example.com/hackathon",
     fullDescription: `Join us for an exciting hackathon where you can showcase your
     innovative ideas and technical skills. This event includes:
@@ -25,20 +25,21 @@ const eventsData = [
     schedule: [
       { time: "9:00 AM", activity: "Registration" },
       { time: "10:00 AM", activity: "Opening Ceremony" },
-      { time: "11:00 AM", activity: "Hacking Begins" }
+      { time: "11:00 AM", activity: "Hacking Begins" },
     ],
     venue: "Engineering Block, Room 301",
     coordinators: [
       { name: "John Doe", contact: "john@example.com" },
-      { name: "Jane Smith", contact: "jane@example.com" }
-    ]
+      { name: "Jane Smith", contact: "jane@example.com" },
+    ],
   },
   {
     id: "website-design",
     eventname: "Website Design",
     description: "Showcase your web design skills in this competitive event.",
     date: "Mar 10, 2025",
-    imageUrl: "https://ik.imagekit.io/dvz2h68tj/Posters/Picsart_25-02-16_19-34-18-055.jpg?updatedAt=1739728982165",
+    imageUrl:
+      "https://ik.imagekit.io/dvz2h68tj/Posters/Picsart_25-02-16_19-34-18-055.jpg?updatedAt=1739728982165",
     registerUrl: "https://example.com/website-design",
     fullDescription: `Participate in a website design competition where you can showcase your creativity and technical skills. This event includes:
     - Design challenges
@@ -49,13 +50,13 @@ const eventsData = [
       { time: "10:00 AM", activity: "Design Challenge Begins" },
       { time: "12:00 PM", activity: "Lunch Break" },
       { time: "1:00 PM", activity: "Expert Feedback Session" },
-      { time: "3:00 PM", activity: "Award Ceremony" }
+      { time: "3:00 PM", activity: "Award Ceremony" },
     ],
     venue: "Design Studio, Room 202",
     coordinators: [
       { name: "Alice Johnson", contact: "alice@example.com" },
-      { name: "Bob Brown", contact: "bob@example.com" }
-    ]
+      { name: "Bob Brown", contact: "bob@example.com" },
+    ],
   },
   {
     id: "it-quiz",
@@ -74,18 +75,19 @@ const eventsData = [
       { time: "11:00 AM", activity: "Quiz Round 2" },
       { time: "12:00 PM", activity: "Lunch Break" },
       { time: "1:00 PM", activity: "Final Round" },
-      { time: "2:00 PM", activity: "Award Ceremony" }
+      { time: "2:00 PM", activity: "Award Ceremony" },
     ],
     venue: "Auditorium, Room 101",
     coordinators: [
       { name: "Charlie Davis", contact: "charlie@example.com" },
-      { name: "Daisy Miller", contact: "daisy@example.com" }
-    ]
+      { name: "Daisy Miller", contact: "daisy@example.com" },
+    ],
   },
   {
     id: "escape-room",
     eventname: "Escape Room",
-    description: "Solve puzzles and escape the room in this thrilling challenge.",
+    description:
+      "Solve puzzles and escape the room in this thrilling challenge.",
     date: "May 20, 2025",
     imageUrl: "/900.jpg",
     registerUrl: "https://example.com/escape-room",
@@ -97,18 +99,19 @@ const eventsData = [
       { time: "9:00 AM", activity: "Registration" },
       { time: "10:00 AM", activity: "Escape Room Challenge Begins" },
       { time: "12:00 PM", activity: "Lunch Break" },
-      { time: "1:00 PM", activity: "Award Ceremony" }
+      { time: "1:00 PM", activity: "Award Ceremony" },
     ],
     venue: "Escape Room, Room 404",
     coordinators: [
       { name: "Eve White", contact: "eve@example.com" },
-      { name: "Frank Black", contact: "frank@example.com" }
-    ]
+      { name: "Frank Black", contact: "frank@example.com" },
+    ],
   },
   {
     id: "puzzle-solving",
     eventname: "Puzzle Solving",
-    description: "Put your problem-solving skills to the test with various puzzles.",
+    description:
+      "Put your problem-solving skills to the test with various puzzles.",
     date: "Jun 15, 2025",
     imageUrl: "/900.jpg",
     registerUrl: "https://example.com/puzzle-solving",
@@ -121,13 +124,13 @@ const eventsData = [
       { time: "10:00 AM", activity: "Puzzle Challenge Begins" },
       { time: "12:00 PM", activity: "Lunch Break" },
       { time: "1:00 PM", activity: "Expert Feedback Session" },
-      { time: "3:00 PM", activity: "Award Ceremony" }
+      { time: "3:00 PM", activity: "Award Ceremony" },
     ],
     venue: "Puzzle Room, Room 505",
     coordinators: [
       { name: "Grace Green", contact: "grace@example.com" },
-      { name: "Henry Blue", contact: "henry@example.com" }
-    ]
+      { name: "Henry Blue", contact: "henry@example.com" },
+    ],
   },
   {
     id: "e-games",
@@ -145,13 +148,13 @@ const eventsData = [
       { time: "10:00 AM", activity: "Gaming Challenge Begins" },
       { time: "12:00 PM", activity: "Lunch Break" },
       { time: "1:00 PM", activity: "Expert Feedback Session" },
-      { time: "3:00 PM", activity: "Award Ceremony" }
+      { time: "3:00 PM", activity: "Award Ceremony" },
     ],
     venue: "Gaming Room, Room 606",
     coordinators: [
       { name: "Ivy Red", contact: "ivy@example.com" },
-      { name: "Jack Yellow", contact: "jack@example.com" }
-    ]
+      { name: "Jack Yellow", contact: "jack@example.com" },
+    ],
   },
   {
     id: "fun-games",
@@ -168,18 +171,19 @@ const eventsData = [
       { time: "9:00 AM", activity: "Registration" },
       { time: "10:00 AM", activity: "Fun Games Begin" },
       { time: "12:00 PM", activity: "Lunch Break" },
-      { time: "1:00 PM", activity: "Award Ceremony" }
+      { time: "1:00 PM", activity: "Award Ceremony" },
     ],
     venue: "Fun Room, Room 707",
     coordinators: [
       { name: "Kelly Orange", contact: "kelly@example.com" },
-      { name: "Liam Purple", contact: "liam@example.com" }
-    ]
+      { name: "Liam Purple", contact: "liam@example.com" },
+    ],
   },
   {
     id: "spot-photography",
     eventname: "Spot Photography",
-    description: "Capture the moment in this on-the-spot photography competition.",
+    description:
+      "Capture the moment in this on-the-spot photography competition.",
     date: "Sep 20, 2025",
     imageUrl: "/900.jpg",
     registerUrl: "https://example.com/spot-photography",
@@ -192,18 +196,19 @@ const eventsData = [
       { time: "10:00 AM", activity: "Photography Challenge Begins" },
       { time: "12:00 PM", activity: "Lunch Break" },
       { time: "1:00 PM", activity: "Expert Feedback Session" },
-      { time: "3:00 PM", activity: "Award Ceremony" }
+      { time: "3:00 PM", activity: "Award Ceremony" },
     ],
     venue: "Photography Room, Room 808",
     coordinators: [
       { name: "Mia Pink", contact: "mia@example.com" },
-      { name: "Nolan Brown", contact: "nolan@example.com" }
-    ]
+      { name: "Nolan Brown", contact: "nolan@example.com" },
+    ],
   },
   {
     id: "fast-typing",
     eventname: "Fast Typing",
-    description: "Test your typing speed in this fast-paced typing competition.",
+    description:
+      "Test your typing speed in this fast-paced typing competition.",
     date: "Oct 15, 2025",
     imageUrl: "/900.jpg",
     registerUrl: "https://example.com/fast-typing",
@@ -216,18 +221,19 @@ const eventsData = [
       { time: "10:00 AM", activity: "Typing Challenge Begins" },
       { time: "12:00 PM", activity: "Lunch Break" },
       { time: "1:00 PM", activity: "Expert Feedback Session" },
-      { time: "3:00 PM", activity: "Award Ceremony" }
+      { time: "3:00 PM", activity: "Award Ceremony" },
     ],
     venue: "Typing Room, Room 909",
     coordinators: [
       { name: "Olivia White", contact: "olivia@example.com" },
-      { name: "Peter Green", contact: "peter@example.com" }
-    ]
+      { name: "Peter Green", contact: "peter@example.com" },
+    ],
   },
   {
     id: "rubiks-cube",
     eventname: "Rubik's Cube",
-    description: "Solve the Rubik's Cube as fast as you can in this speed challenge.",
+    description:
+      "Solve the Rubik's Cube as fast as you can in this speed challenge.",
     date: "Nov 10, 2025",
     imageUrl: "/900.jpg",
     registerUrl: "https://example.com/rubiks-cube",
@@ -240,18 +246,19 @@ const eventsData = [
       { time: "10:00 AM", activity: "Speed Challenge Begins" },
       { time: "12:00 PM", activity: "Lunch Break" },
       { time: "1:00 PM", activity: "Expert Feedback Session" },
-      { time: "3:00 PM", activity: "Award Ceremony" }
+      { time: "3:00 PM", activity: "Award Ceremony" },
     ],
     venue: "Rubik's Cube Room, Room 1010",
     coordinators: [
       { name: "Quinn Blue", contact: "quinn@example.com" },
-      { name: "Rachel Red", contact: "rachel@example.com" }
-    ]
+      { name: "Rachel Red", contact: "rachel@example.com" },
+    ],
   },
   {
     id: "mehndi",
     eventname: "Mehndi",
-    description: "Showcase your artistic skills in this traditional Mehndi competition.",
+    description:
+      "Showcase your artistic skills in this traditional Mehndi competition.",
     date: "Dec 05, 2025",
     imageUrl: "/900.jpg",
     registerUrl: "https://example.com/mehndi",
@@ -264,14 +271,14 @@ const eventsData = [
       { time: "10:00 AM", activity: "Mehndi Challenge Begins" },
       { time: "12:00 PM", activity: "Lunch Break" },
       { time: "1:00 PM", activity: "Expert Feedback Session" },
-      { time: "3:00 PM", activity: "Award Ceremony" }
+      { time: "3:00 PM", activity: "Award Ceremony" },
     ],
     venue: "Mehndi Room, Room 1111",
     coordinators: [
       { name: "Sophia Green", contact: "sophia@example.com" },
-      { name: "Thomas Brown", contact: "thomas@example.com" }
-    ]
-  }
+      { name: "Thomas Brown", contact: "thomas@example.com" },
+    ],
+  },
 ];
 
 const EventPage = () => {
