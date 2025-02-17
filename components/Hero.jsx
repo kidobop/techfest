@@ -35,7 +35,7 @@ export default function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ ease: "easeInOut", duration: 0.75, delay: 0.2 }}
         >
-          Unleash your potential at Tech Aura 2025. Join us on Feb 24-25 to dive
+          Unleash your potential at Tech Aura 2025. Join us on Feb 24-25 at MTI Thrissur to dive
           into groundbreaking technology, celebrate creativity, and build a
           brighter future. Unlock your potential and be part of the change!
         </motion.p>
