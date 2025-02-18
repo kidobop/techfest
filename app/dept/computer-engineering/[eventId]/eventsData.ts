@@ -11,19 +11,9 @@ const eventsData = [
     - Multiple rounds of quizzes
     - Expert judges
     - Award ceremony`,
-    schedule: [
-      { time: "9:00 AM", activity: "Registration" },
-      { time: "10:00 AM", activity: "Quiz Round 1" },
-      { time: "11:00 AM", activity: "Quiz Round 2" },
-      { time: "12:00 PM", activity: "Lunch Break" },
-      { time: "1:00 PM", activity: "Final Round" },
-      { time: "2:00 PM", activity: "Award Ceremony" },
-    ],
-    venue: "Auditorium, Room 101",
-    coordinators: [
-      { name: "Charlie Davis", contact: "charlie@example.com" },
-      { name: "Daisy Miller", contact: "daisy@example.com" },
-    ],
+    schedule: [{ time: "1:30 PM", activity: "Registration" }],
+    venue: "Software Lab 1, CT Block",
+    coordinators: [{ name: "Anas Shaikh", contact: "6235103900" }],
   },
   {
     id: "hack-and-seek",
@@ -34,30 +24,9 @@ const eventsData = [
     imageUrl:
       "https://ik.imagekit.io/dvz2h68tj/Posters/IMG-20250216-WA0200.jpg?updatedAt=1739728982178",
     registerUrl: "https://forms.gle/KrVWUyt2iUHaknt79",
-  },
-  {
-    id: "e-games",
-    eventname: "E-Games",
-    description: "Compete in various e-games and show off your gaming skills.",
-    date: "Feb 24, 2025 - 3:00 AM",
-    imageUrl: "/900.jpg",
-    registerUrl: "https://example.com/e-games",
-    fullDescription: `Join us for an exciting e-games competition where you can showcase your gaming skills. This event includes:
-    - Multiple gaming challenges
-    - Expert feedback
-    - Award ceremony`,
-    schedule: [
-      { time: "9:00 AM", activity: "Registration" },
-      { time: "10:00 AM", activity: "Gaming Challenge Begins" },
-      { time: "12:00 PM", activity: "Lunch Break" },
-      { time: "1:00 PM", activity: "Expert Feedback Session" },
-      { time: "3:00 PM", activity: "Award Ceremony" },
-    ],
-    venue: "Gaming Room, Room 606",
-    coordinators: [
-      { name: "Ivy Red", contact: "ivy@example.com" },
-      { name: "Jack Yellow", contact: "jack@example.com" },
-    ],
+    venue: "Software Lab 1, CT Block",
+    schedule: [{ time: "3:30 PM", activity: "Registration" }],
+    coordinators: [{ name: "Gautham Krishna", contact: "+91 9526774396" }],
   },
   {
     id: "fast-typing",
@@ -71,29 +40,22 @@ const eventsData = [
     fullDescription: `Join us for an exciting fast-typing competition where you can test your typing speed. This event includes:
     - Typing challenges
     - Expert feedback
-    - Award ceremony`,
-    schedule: [
-      { time: "9:00 AM", activity: "Registration" },
-      { time: "10:00 AM", activity: "Typing Challenge Begins" },
-      { time: "12:00 PM", activity: "Lunch Break" },
-      { time: "1:00 PM", activity: "Expert Feedback Session" },
-      { time: "3:00 PM", activity: "Award Ceremony" },
-    ],
-    venue: "Typing Room, Room 909",
-    coordinators: [
-      { name: "Olivia White", contact: "olivia@example.com" },
-      { name: "Peter Green", contact: "peter@example.com" },
-    ],
+    `,
+    schedule: [{ time: "2:30 PM", activity: "Registration" }],
+    venue: "CCF Lab, CT Block",
+    coordinators: [{ name: "Joyal", contact: "8848334058" }],
   },
   {
     id: "pes",
     eventname: "PES",
-    description:
-      "Join this event to showcase your skills in a specific domain.",
+    description: "Join this event to showcase your skills in a PES match.",
     date: "Feb 24, 2025 - 2:30 PM",
     imageUrl:
       "https://ik.imagekit.io/dvz2h68tj/Posters/IMG-20250216-WA0154.jpg?updatedAt=1739728981917",
     registerUrl: "https://forms.gle/5CHWDRYoRMh9LyYP8",
+    schedule: [{ time: "2:30 PM", activity: "Event Starts" }],
+    venue: "Classroom 601, CT Block",
+    coordinators: [{ name: "Kiran", contact: "9947084256" }],
   },
   {
     id: "dashdog",
@@ -104,6 +66,32 @@ const eventsData = [
     imageUrl:
       "https://ik.imagekit.io/dvz2h68tj/Posters/WhatsApp%20Image%202025-02-17%20at%2018.13.20_17d40d9b.jpg?updatedAt=1739816266776",
     registerUrl: "https://forms.gle/gxW4B7mw6PnmoCUo6",
+    schedule: [{ time: "1:30 PM", activity: "Event Starts" }],
+    venue: "CCF Lab, CT Block",
+    coordinators: [{ name: "Alan PS", contact: "6238393020" }],
+  },
+  {
+    id: "hackathon-and-idea-pitching",
+    eventname: "Hackathon and Idea Pitching",
+    description: "Participate in a hackathon and pitch your innovative ideas.",
+    date: "Feb 25, 2025 - 9:00 AM",
+    imageUrl:
+      "https://ik.imagekit.io/dvz2h68tj/Posters/36776798_8467755.png?updatedAt=1739758889014",
+    registerUrl:
+      "https://docs.google.com/forms/d/e/1FAIpQLSe3ZVHJvn2R5FH_-NZ6J7NaQqfjRBuOM107pw0KpscqFpeI6A/viewform",
+    fullDescription: `Join us for an exciting hackathon where you can showcase your
+    innovative ideas and technical skills. This event includes:
+    - Real world problem solving challenge
+    - Mentorship sessions
+    - Pitch presentation
+    - Networking opportunities`,
+    schedule: [
+      { time: "9:00 PM", activity: "Registration" },
+      { time: "10:00 PM", activity: "Ideathon Begin" },
+      { time: "3:00 PM", activity: "Event Closes" },
+    ],
+    venue: "Room 601, CT Block",
+    coordinators: [{ name: "Nabeel", contact: "9207174577" }],
   },
   {
     id: "crack-the-code",
@@ -116,20 +104,10 @@ const eventsData = [
     registerUrl: "https://forms.gle/CW1HnofpmHsdZvmX7",
     fullDescription: `Join us for an exciting puzzle-solving competition where you can test your problem-solving skills. This event includes:
     - Multiple puzzle challenges
-    - Expert feedback
     - Award ceremony`,
-    schedule: [
-      { time: "9:00 AM", activity: "Registration" },
-      { time: "10:00 AM", activity: "Puzzle Challenge Begins" },
-      { time: "12:00 PM", activity: "Lunch Break" },
-      { time: "1:00 PM", activity: "Expert Feedback Session" },
-      { time: "3:00 PM", activity: "Award Ceremony" },
-    ],
-    venue: "Puzzle Room, Room 505",
-    coordinators: [
-      { name: "Grace Green", contact: "grace@example.com" },
-      { name: "Henry Blue", contact: "henry@example.com" },
-    ],
+    schedule: [{ time: "9:00 AM", activity: "Registration" }],
+    venue: "Software Lab 1, CT Black",
+    coordinators: [{ name: "Gautham", contact: "9526774396" }],
   },
   {
     id: "spot-photography",
@@ -147,15 +125,10 @@ const eventsData = [
     schedule: [
       { time: "9:00 AM", activity: "Registration" },
       { time: "10:00 AM", activity: "Photography Challenge Begins" },
-      { time: "12:00 PM", activity: "Lunch Break" },
-      { time: "1:00 PM", activity: "Expert Feedback Session" },
       { time: "3:00 PM", activity: "Award Ceremony" },
     ],
-    venue: "Photography Room, Room 808",
-    coordinators: [
-      { name: "Mia Pink", contact: "mia@example.com" },
-      { name: "Nolan Brown", contact: "nolan@example.com" },
-    ],
+    venue: "Classroom 602, CT Block",
+    coordinators: [{ name: "Amal babu", contact: "7902819431" }],
   },
   {
     id: "workshop",
@@ -165,6 +138,12 @@ const eventsData = [
     imageUrl:
       "https://ik.imagekit.io/dvz2h68tj/Posters/Picsart_25-02-15_16-40-35-502.jpg?updatedAt=1739728982173",
     registerUrl: "https://forms.gle/CDEo1zsG6moai7vB8",
+    fullDescription: `- This workshop has a duration of 4 hours and covers the basics of 2D game development.
+ - Participants will learn essential concepts such as player movement, collision detection, and adding score mechanisms.
+- The workshop also includes a session on deploying games on the internet.`,
+    schedule: [{ time: "9:00 AM", activity: "Event Starts" }],
+    venue: "CCF Lab, CT Block",
+    coordinators: [{ name: "Alan PS", contact: "6238393020" }],
   },
   {
     id: "cube",
@@ -177,20 +156,10 @@ const eventsData = [
     registerUrl: "https://forms.gle/8rAwXSeHqs317UfP8",
     fullDescription: `Join us for an exciting Rubik's Cube speed challenge where you can solve the Rubik's Cube as fast as you can. This event includes:
     - Speed challenges
-    - Expert feedback
-    - Award ceremony`,
-    schedule: [
-      { time: "9:00 AM", activity: "Registration" },
-      { time: "10:00 AM", activity: "Speed Challenge Begins" },
-      { time: "12:00 PM", activity: "Lunch Break" },
-      { time: "1:00 PM", activity: "Expert Feedback Session" },
-      { time: "3:00 PM", activity: "Award Ceremony" },
-    ],
-    venue: "Rubik's Cube Room, Room 1010",
-    coordinators: [
-      { name: "Quinn Blue", contact: "quinn@example.com" },
-      { name: "Rachel Red", contact: "rachel@example.com" },
-    ],
+    `,
+    schedule: [{ time: "9:00 AM", activity: "Registration" }],
+    venue: "Room 603, CT Block",
+    coordinators: [{ name: "Thomas", contact: "7994930867" }],
   },
   {
     id: "mehndi",
@@ -202,21 +171,14 @@ const eventsData = [
       "https://ik.imagekit.io/dvz2h68tj/Posters/Picsart_25-02-15_17-14-39-353.png?updatedAt=1739728982776",
     registerUrl: "https://forms.gle/5Y5qw1bGLyFxowm4A",
     fullDescription: `Join us for an exciting Mehndi competition where you can showcase your artistic skills. This event includes:
-    - Mehndi challenges
-    - Expert feedback
-    - Award ceremony`,
+    - Mehndi challenges`,
     schedule: [
-      { time: "9:00 AM", activity: "Registration" },
-      { time: "10:00 AM", activity: "Mehndi Challenge Begins" },
-      { time: "12:00 PM", activity: "Lunch Break" },
-      { time: "1:00 PM", activity: "Expert Feedback Session" },
+      { time: "11:00 AM", activity: "Registration" },
+      { time: "11:30 AM", activity: "Mehndi Challenge Begins" },
       { time: "3:00 PM", activity: "Award Ceremony" },
     ],
-    venue: "Mehndi Room, Room 1111",
-    coordinators: [
-      { name: "Sophia Green", contact: "sophia@example.com" },
-      { name: "Thomas Brown", contact: "thomas@example.com" },
-    ],
+    venue: "Room 601, CT Block",
+    coordinators: [{ name: "Uthara", contact: "9605703562" }],
   },
   {
     id: "website-design",
@@ -225,23 +187,19 @@ const eventsData = [
     date: "Feb 25, 2025 - 11:00 AM",
     imageUrl:
       "https://ik.imagekit.io/dvz2h68tj/Posters/Picsart_25-02-16_19-34-18-055.jpg?updatedAt=1739728982165",
-    registerUrl: "https://example.com/website-design",
+    registerUrl: "https://forms.gle/rDQnbKcmQSab5xWYA",
     fullDescription: `Participate in a website design competition where you can showcase your creativity and technical skills. This event includes:
     - Design challenges
-    - Expert feedback
+    - Feedback Session
     - Award ceremony`,
     schedule: [
-      { time: "9:00 AM", activity: "Registration" },
-      { time: "10:00 AM", activity: "Design Challenge Begins" },
-      { time: "12:00 PM", activity: "Lunch Break" },
-      { time: "1:00 PM", activity: "Expert Feedback Session" },
+      { time: "10:30 AM", activity: "Registration" },
+      { time: "11:00 AM", activity: "Design Challenge Begins" },
+      { time: "1:00 PM", activity: "Feedback Session" },
       { time: "3:00 PM", activity: "Award Ceremony" },
     ],
-    venue: "Design Studio, Room 202",
-    coordinators: [
-      { name: "Alice Johnson", contact: "alice@example.com" },
-      { name: "Bob Brown", contact: "bob@example.com" },
-    ],
+    venue: "Software Lab 1, CT Block",
+    coordinators: [{ name: "Aaqil Fazil", contact: "9447676692" }],
   },
   {
     id: "fun-games",
@@ -250,7 +208,8 @@ const eventsData = [
     date: "Feb 25, 2025 - 9:00 AM - 1:00 PM",
     imageUrl:
       "https://ik.imagekit.io/dvz2h68tj/Posters/Picsart_25-02-15_18-17-30-025.jpg?updatedAt=1739728982651",
-    registerUrl: "/dept/computer-engineering/fun-games",
+    registerUrl:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfjQ_q5iX27XGzyOkluMuAPIG71cr-8LPECNEDv3BcCK3AIbQ/viewform?usp=dialog",
     fullDescription: `Join us for a day of fun games and activities. This event includes:
     - Various fun games
     - Exciting activities
@@ -258,14 +217,10 @@ const eventsData = [
     schedule: [
       { time: "9:00 AM", activity: "Registration" },
       { time: "10:00 AM", activity: "Fun Games Begin" },
-      { time: "12:00 PM", activity: "Lunch Break" },
-      { time: "1:00 PM", activity: "Award Ceremony" },
+      { time: "1:00 PM", activity: "Event Closes" },
     ],
-    venue: "Fun Room, Room 707",
-    coordinators: [
-      { name: "Kelly Orange", contact: "kelly@example.com" },
-      { name: "Liam Purple", contact: "liam@example.com" },
-    ],
+    venue: "Seminar Hall",
+    coordinators: [{ name: "Athul Krishna", contact: "9207630233" }],
   },
   {
     id: "freefire",
@@ -276,31 +231,8 @@ const eventsData = [
     imageUrl:
       "https://ik.imagekit.io/dvz2h68tj/Posters/IMG-20250214-WA0018.jpg?updatedAt=1739728982007",
     registerUrl: "https://forms.gle/5kzHvZZDAmcF7uJ19",
-  },
-  {
-    id: "hackathon-and-idea-pitching",
-    eventname: "Hackathon and Idea Pitching",
-    description: "Participate in a hackathon and pitch your innovative ideas.",
-    date: "Feb 25, 2025 - 9:00 AM",
-    imageUrl:
-      "https://ik.imagekit.io/dvz2h68tj/Posters/36776798_8467755.png?updatedAt=1739758889014",
-    registerUrl: "https://example.com/hackathon",
-    fullDescription: `Join us for an exciting hackathon where you can showcase your
-    innovative ideas and technical skills. This event includes:
-    - 24-hour coding challenge
-    - Mentorship sessions
-    - Pitch presentation
-    - Networking opportunities`,
-    schedule: [
-      { time: "9:00 AM", activity: "Registration" },
-      { time: "10:00 AM", activity: "Opening Ceremony" },
-      { time: "11:00 AM", activity: "Hacking Begins" },
-    ],
-    venue: "Engineering Block, Room 301",
-    coordinators: [
-      { name: "John Doe", contact: "john@example.com" },
-      { name: "Jane Smith", contact: "jane@example.com" },
-    ],
+    venue: "Room 602",
+    coordinators: [{ name: "Vivek", contact: "7034204886" }],
   },
 ];
 
