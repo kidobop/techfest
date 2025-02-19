@@ -72,8 +72,8 @@ const eventsData = [
   },
   {
     id: "hackathon-and-idea-pitching",
-    eventname: "Hackathon and Idea Pitching",
-    description: "Participate in a hackathon and pitch your innovative ideas.",
+    eventname: "InnovateX Idea Pitching",
+    description: "Participate in a idea and pitch your innovative ideas.",
     date: "Feb 25, 2025 - 9:00 AM",
     imageUrl:
       "https://ik.imagekit.io/dvz2h68tj/Posters/36776798_8467755.png?updatedAt=1739758889014",
