@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import DeptHero from "@/components/DeptHero";
-import EventCard from "@/components/EventCard";
+import EventCard from "@/components/EventCardEE";
 import Footer from "@/components/Footer";
 import eventsData from "./[eventId]/eventsData";
 
